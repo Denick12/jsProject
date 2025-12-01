@@ -45,6 +45,23 @@
             background-color: #f8f9fc;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
+        .task-item {
+    border-left: 4px solid var(--primary-color);
+    transition: transform 0.2s;
+            }
+
+            .task-item:hover {
+                transform: translateY(-2px);
+            }
+
+            .task-item.high-priority {
+                border-left-color: var(--danger-color);
+            }
+
+            .completed {
+                text-decoration: line-through;
+                opacity: 0.7;
+            }
     </style>
 </head>
 <body>
